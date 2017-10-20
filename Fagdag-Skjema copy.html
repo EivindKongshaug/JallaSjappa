@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Nettbutikk</title>
+
+    <Style>
+
+        h1{
+            background-color: rosybrown;
+            margin: 25px 245px 25px 245px;
+            padding: 50px 0 50px 0;
+            text-align: center;
+            border-bottom-right-radius: 55%;
+            border-top-left-radius: 55%;
+            border-top-right-radius: 25%;
+            border-bottom-left-radius: 25%;
+            font-size: 100px;
+            color: darkorange;
+            font-style: italic;
+        }
+
+        .Klasse {
+            background-color: lightblue;
+        }
+
+
+        h4,h3 {
+            Font-size: 25px;
+            font-style: italic;
+            margin-right: 150px;
+            margin-left: 150px;
+            Padding: 25px 50px 25px 50px;
+            background-color: rosybrown;
+            border-bottom-right-radius: 50%;
+            border-top-left-radius: 55%;     
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+        }
+
+        body {
+            margin: 25px 100px 25px 100px;
+            box-sizing: content-box;
+            font-size: 17px;
+            text-align: center;
+            background-image: url("Bilder/Mcern.jpg");
+            background-position: left;
+            background-repeat: repeat-y;
+            background-color: rgba(183, 0, 2, 0.93);
+        }
+
+    </Style>
+
+</head>
+<body>
+
+    <h1>Jalla§</h1>
+        <h3>Venligst fyll inn dette skjemaet</h3>
+
+
+    <form action="Registrering-skjema.html">
+            <Label for="Navneinput" > Navn: </Label>
+            <input id="Navneinput" class="Klasse" type="text" placeholder="Ditt navn" required name="navn"><br>
+            <Label for="Alderinnput" >Alder: </Label>
+            <input id="Alderinnput" class="Klasse" type= number placeholder="alder" required name="alder"><br>
+
+        <h4>Hva vil du ha å drikke?</h4>
+
+            <input type="radio" id="Fanta" name="Drikke" value="Fanta"><label for="Fanta">Fanta <br>
+        <img src="./Bilder/Fanta.png" alt="Hei" width="75"></label> <br>
+
+            <input type="radio" id="Cola" name="Drikke" value="Cola"><label for="Cola">Cola <br>
+        <img src="./Bilder/Cola.png" alt="Halla" width="75"> </label> <br>
+
+            <input type="radio" id="Sprite" name="Drikke" value="Sprite"><label for="Sprite">Sprite <br>
+        <img src="./Bilder/Sprite.jpg" alt="Hallo" width="75"> </label> <br>
+        
+            <br>
+
+        <h4>Mat</h4>
+            <input type="Radio" id="Pizza" name="Mat" value="Pizza"> <label for="Pizza">Pizza </label> <br>
+            <input type="Radio" id="Kebab" name="Mat" value="Kebab"> <label for="Kebab">Kebab</label> <br>
+            <input type="radio" id="Hamburger" name="Mat" value="Hamburger"><label for="Hamburger">Hamburger</label> <br>
+
+        <h4>Sideretter</h4>
+            <input type="checkbox" id="Chips" name="Sides" value="Chips"> <label for="Chips"> Chips</label> <br>
+            <input type="checkbox" id="Løkringer" name="Sides" value="Løkringer"> <label for="Løkringer"> Løkringer</label> <br>
+            <input type="checkbox" id="Potetmos" name="Sides" value="Potetmos"> <label for="Potetmos"> Potetmos</label> <br>
+            <input type="checkbox" id="Søtpotetfries" name="Sides" value="Søtpotetfries"> <label for="Søtpotetfries"> Søtpotetfries</label> <br>
+
+        <h4>Velg deg en dressing til maten</h4>
+        <select name="Dressing" id="Dressing">
+            <Option value=""> Velg deg en dressing!</Option>
+            <option value="Ketchup">Ketchup</option>
+            <option value="Sennep">Sennep</option>
+            <Option value="Mayones">Mayones</Option>
+            <option value="Hamburger dressing">Hamburger dressing</option>
+        </select> <br>
+
+
+        <button type="submit" style="margin: 15px"> Send inn</button>
+        <Button type="reset">reset</Button>
+
+
+    </form>
+    <h1> Jalla§</h1>
+</body>
+</html>
